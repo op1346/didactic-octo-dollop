@@ -70,7 +70,66 @@ module.exports = {
      },
   ],
   technologies: [
-
+    {
+      name: "JavaScript",
+      years: "1"
+    },
+    {
+      name: "React.js",
+      years: "1"
+    },
+    {
+      name: "Node.js",
+      years: "1"
+    },
+    {
+      name: "Express.js",
+      years: "1"
+    },
+    {
+      name: "Ruby",
+      years: "1"
+    },
+    {
+      name: "Ruby on Rails",
+      years: "1"
+    },
+    {
+      name: "HTML",
+      years: "2"
+    },
+    {
+      name: "CSS",
+      years: "2"
+    },
+    {
+      name: "jQuery",
+      years: "1"
+    },
+    {
+      name: "Git",
+      years: "1"
+    },
+    {
+      name: "Postgresql",
+      years: "1"
+    },
+    {
+      name: "AWS",
+      years: "1"
+    },
+    {
+      name: "MongoDB",
+      years: "1"
+    },
+    {
+      name: "SQL",
+      years: "1"
+    },
+    {
+      name: "",
+      years: ""
+    },
   ],
   projects: [
     {

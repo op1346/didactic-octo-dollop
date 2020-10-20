@@ -2,7 +2,7 @@
 // |__) /  \  |  |__/ |  |  
 // |__) \__/  |  |  \ |  |  
 
-// This is the main file for the didactic octo dollop bot.
+// This is the main file for the didactic bot.
 
 // Import Botkit's core features
 const { Botkit } = require('botkit');

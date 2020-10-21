@@ -2,7 +2,7 @@ module.exports = {
   jen: {
     firstName: "Jen",
     lastName: "Lu",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+    description: "<strong>Jen</strong> is a web developer, who in her free time enjoys trying new restaurants, playing animal crossing, and doodling on her iPad.",
     jobSearch: true,
     willRelocate: true,
     jobHistory: [
@@ -10,7 +10,7 @@ module.exports = {
         companyName: "McCalls Catering / Cafe 5",
         location: "San Francisco, CA",
         jobTitle: "Barista / Cashier",
-        jobDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+        jobDescription: "Provided excellent customer service and created appealing daily product displays to increase sales.",
         startDate: "October 2018",
         endDate: "November 2019"
       },
@@ -18,7 +18,7 @@ module.exports = {
         companyName: "UNIQLO",
         location: "San Francisco, CA",
         jobTitle: "Sales Associate",
-        jobDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+        jobDescription: "Assisted all customer needs by following UNIQLO service standards and procedures. Consistently received positive feedback from weekly online reviews and was promoted in the first 3 months.",
         startDate: "March 2017",
         endDate: "September 2017"
       },
@@ -26,7 +26,7 @@ module.exports = {
         companyName: "Virginia Tech Department of Forestry",
         location: "Blacksburg, VA",
         jobTitle: "Research Assistant",
-        jobDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+        jobDescription: "Assisted PhD students with ongoing research of Poplar tree genetics and functional genomics. Organized an efficient workflow in the lab by properly documenting and maintaining over one thousand genetically modified plants.",
         startDate: "October 2016",
         endDate: "February 2017"
       },
@@ -34,7 +34,7 @@ module.exports = {
         companyName: "Sushi Factory",
         location: "Blacksburg, VA",
         jobTitle: "Assistant Manager",
-        jobDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+        jobDescription: "Trained all new employees and maintained all social media platforms",
         startDate: "June 2016",
         endDate: "February 2017"
       },
@@ -42,7 +42,7 @@ module.exports = {
         companyName: "OPass Tea and Crepe",
         location: "Blacksburg, VA",
         jobTitle: "Assistant Manager",
-        jobDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+        jobDescription: "Oversaw all daily activies, recorded/filed monthly and quarterly taxes",
         startDate: "August 2013",
         endDate: "May 2016"
       },
@@ -135,31 +135,31 @@ module.exports = {
     projects: [
       {
         name: "Sushi Factory Website",
-        description: "Lorem ipsum dolor sit amet",
+        description: "A website created for sushi restaurant looking to increase online presence and provide easy access to menu.",
         technologies: ["JavaScript", "React.js", "CSS"],
-        url: "",
-        img: ""
+        url: "https://sushi-factory.herokuapp.com/#/",
+        img: "./images/sushi.png"
       },
       {
         name: "Puppr",
-        description: "Lorem ipsum dolor sit amet",
+        description: "A puppy themed clone of photo uploading site, Flickr. Upload your cutest puppy photos, create albums, and more.",
         technologies: ["Ruby", "Ruby on Rails", "Postgresql", "AWS", "JavaScript", "React.js", "Redux.js", "CSS"],
-        url: "",
-        img: ""
+        url: "http://puppr-project.herokuapp.com/#/",
+        img: "./images/fsp.png"
       },
       {
         name: "Zi Match",
-        description: "Lorem ipsum dolor sit amet",
+        description: "A card matching game to learn simple Chinese words and phrases. Includes a study section with flashcards to initially learn these words/phrases.",
         technologies: ["JavaScript", "HTML", "CSS"],
-        url: "",
-        img: ""
+        url: "http://hellojenlu.com/zi-match/",
+        img: "./images/js.png"
       },
       {
         name: "Bored Gamer",
-        description: "Lorem ipsum dolor sit amet",
+        description: "A web app built by a team of 3 that helps indecisive board gamers choose what to play. Games can be rated and saved for future reference.",
         technologies: ["JavaScript", "MongoDB", "Express.js", "React.js", "Node.js", "CSS"],
-        url: "",
-        img: ""
+        url: "https://bored-gamer.herokuapp.com/",
+        img: "./images/mern.png"
       },
     ],
     contactInfo: {
@@ -175,7 +175,7 @@ module.exports = {
   olivia: {
     firstName: "Olivia",
     lastName: "Park",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+    description: "<strong>Olivia</strong> is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
     jobSearch: true,
     willRelocate: true,
     jobHistory: [

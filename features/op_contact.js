@@ -7,19 +7,19 @@ module.exports = function(controller) {
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, { text: `Email: <Strong>${email}</Strong>` });
+      await bot.reply(message, { text: `Email: ${email}` });
       await bot.reply(message, { type: 'typing' });
     }, 2000);
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, { text: `LinkedIn: <Strong>${linkedIn}</Strong>` });
+      await bot.reply(message, { text: `LinkedIn: <a href ='${linkedIn}' target='_blank'>${linkedIn}</a>` });
       await bot.reply(message, { type: 'typing' });
     }, 3000);
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, { text: `Portfolio: <Strong><a href='${portfolio}' target='_blank'>${portfolio}</a></Strong>` });
+      await bot.reply(message, { text: `Portfolio: <a href='${portfolio}' target='_blank'>${portfolio}</a>` });
       await bot.reply(message, { type: 'typing' });
     }, 4000);
   });

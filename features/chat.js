@@ -13,12 +13,9 @@ module.exports = function(controller) {
 
     console.log('Chat with me: http://localhost:' + (process.env.PORT || 3000));
 
-    controller.on('hello', async(bot, message) => {
-        console.log("WELCOME")
-        await intro(bot, message)
-      });
-
-    controller.hears('hello', async(bot) => {
-        await bot.say('hello');
+    // listen for a message containing the word "hello", and send a reply
+    controller.hears('hello','message',async(bot, message) => {
+        // do something!
+        await bot.reply(message, 'Hello human')
     });
 }

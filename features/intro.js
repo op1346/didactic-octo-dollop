@@ -18,12 +18,25 @@ module.exports = function(controller) {
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, "Who would you like more information on? You can also learn about both!");
+      await bot.reply(message, {
+        text: "Who would you like more information on? You can also learn about both!",
+        quick_replies: [
+          {
+            title: 'Jen',
+            payload: 'Jen'
+          },
+          {
+            title: 'Olivia',
+            payload: 'Olivia'
+          },
+          {
+            title: 'Both',
+            payload: 'Both!'
+          }
+        ]
+      });
     }, 3000)
 
-
-
   })
-
 
 }

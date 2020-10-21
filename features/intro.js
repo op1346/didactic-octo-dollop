@@ -1,4 +1,3 @@
-
 module.exports = function(controller) {
   // automatically says hi when user enters
   controller.on('welcome_back', async(bot, message) => {
@@ -31,7 +30,7 @@ module.exports = function(controller) {
           },
           {
             title: 'Both',
-            payload: 'Both!'
+            payload: 'Both'
           }
         ]
       });

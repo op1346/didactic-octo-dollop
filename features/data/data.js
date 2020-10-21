@@ -175,7 +175,7 @@ module.exports = {
   olivia: {
     firstName: "Olivia",
     lastName: "Park",
-    description: "<strong>Olivia</strong> is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+    description: "<strong>Olivia</strong> is a biologist-turned-software engineer, who enjoys spending time with her dogs and thinking of new startup ideas.",
     jobSearch: true,
     willRelocate: true,
     jobHistory: [
@@ -183,7 +183,7 @@ module.exports = {
         companyName: "Color Genomics",
         location: "Burlingame, CA",
         jobTitle: "Clinical Lab Associate",
-        jobDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+        jobDescription: "As one of the first Clinical Lab Associates (CLA), Olivia was integral in defining the role and providing guidance to other CLAs.",
         startDate: "January 2017",
         endDate: "August 2018"
       },
@@ -191,7 +191,7 @@ module.exports = {
         companyName: "Scribe America",
         location: "Salem, VA",
         jobTitle: "Medical Scribe",
-        jobDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem.",
+        jobDescription: "Accompanied multiple emergency department physicians during patient consultations and assisted in recording encounters into the electronic medical record.",
         startDate: "December 2018",
         endDate: "September 2019"
       },
@@ -252,29 +252,29 @@ module.exports = {
     ],
     projects: [
       {
-        name: "Static Node.js and Express Site",
-        description: "Lorem ipsum dolor sit amet",
+        name: "Portfolio Site",
+        description: "A portfolio site of all the projects Olivia completed during bootcamp. These projects include a random quote generator, a DOM manipulation project, an interactive form, a game show app, and an API project.",
         technologies: ["JavaScript", "Node.js", "Express"],
         url: "www.oliviahpark.com",
         img: ""
       },
       {
         name: "React Gallery App",
-        description: "Lorem ipsum dolor sit amet",
+        description: "A React Gallery app that is similar to Flickr.",
         technologies: ["JavaScript", "React", "React Router", "Fetch API", "JSX"],
         url: "",
         img: ""
       },
       {
         name: "SQL Library Manager",
-        description: "Lorem ipsum dolor sit amet",
+        description: "A website that manages a library database. Allowing the user to create, read, update, and delete books.",
         technologies: ["JavaScript", "Node.js", "Express", "Sequelize"],
         url: "",
         img: ""
       },
       {
         name: "REST API Project",
-        description: "Lorem ipsum dolor sit amet",
+        description: "Backend portion of a fullstack project for managing courses at an imaginary school.",
         technologies: ["JavaScript", "Sequelize", "Express.js", "Node.js"],
         url: "",
         img: ""

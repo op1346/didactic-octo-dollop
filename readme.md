@@ -1,8 +1,8 @@
-# Botkit Starter Kit
+# JO the OJ Robot 
 
-This is a Botkit starter kit for web, created with the [Yeoman generator](https://github.com/howdyai/botkit/tree/master/packages/generator-botkit#readme).
+This project was created using the Botkit starter kit for web, created with the [Yeoman generator](https://github.com/howdyai/botkit/tree/master/packages/generator-botkit#readme).
 
-To complete the configuration of this bot, make sure to update the included `.env` file with your platform tokens and credentials.
+We are two friends that wanted a bot to introduce us and our friendship. 
 
 [Botkit Docs](https://botkit.ai/docs/v4)
 

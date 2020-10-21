@@ -14,6 +14,6 @@ module.exports = function(controller) {
     console.log('Chat with me: http://localhost:' + (process.env.PORT || 3000));
 
     controller.hears('hello', async(bot) => {
-        awat bot.say('hello');
+        await bot.say('hello');
     });
 }

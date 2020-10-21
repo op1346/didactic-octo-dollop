@@ -1,6 +1,6 @@
 //  __   __  ___        ___
-// |__) /  \  |  |__/ |  |  
-// |__) \__/  |  |  \ |  |  
+// |__) /  \  |  |__/ |  |
+// |__) \__/  |  |  \ |  |
 
 // This is the main file for the didactic bot.
 
@@ -12,17 +12,11 @@ const { BotkitCMSHelper } = require('botkit-plugin-cms');
 
 const { WebAdapter } = require('botbuilder-adapter-web');
 
-const { MongoDbStorage } = require('botbuilder-storage-mongodb');
 
 // Load process.env values from .env file
 require('dotenv').config();
 
 let storage = null;
-if (process.env.MONGO_URI) {
-    storage = mongoStorage = new MongoDbStorage({
-        url : process.env.MONGO_URI,
-    });
-}
 
 
 const adapter = new WebAdapter({});

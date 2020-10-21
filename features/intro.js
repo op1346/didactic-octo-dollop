@@ -14,10 +14,15 @@ module.exports = function(controller) {
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, `My name is JO the OJ Bot and I was created by <strong>Jen Lu</strong> and <strong>Olivia Park</strong>
-        <br><img src="./images/jo1.jpg" alt="jen and olivia" width="200">`);
+      await bot.reply(message, `My name is JO the OJ Bot and I was created by <strong>Jen Lu</strong> and <strong>Olivia Park</strong>`);
       await bot.reply(message, {type: "typing"});
     }, 2000)
+
+    setTimeout(async () => {
+      await bot.changeContext(message.reference);
+      await bot.reply(message, `<img src="./images/jo1.jpg" alt="jen and olivia" width="200">`);
+      await bot.reply(message, {type: "typing"});
+    }, 3000)
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);

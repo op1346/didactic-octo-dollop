@@ -163,7 +163,7 @@ module.exports = {
       },
     ],
     contactInfo: {
-      name: "Jen Lu",
+      name: "Jennifer Lu",
       email: "nejul33@gmail.com",
       portfolio: "http://hellojenlu.com",
       linkedIn: "https://www.linkedin.com/in/jennifer-l-5b1b83a2/",
@@ -171,7 +171,7 @@ module.exports = {
 
     }
   },
-  
+
   olivia: {
     firstName: "Olivia",
     lastName: "Park",

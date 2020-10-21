@@ -20,12 +20,16 @@ module.exports = function(controller) {
             payload: `${person}'s Education`
           },
           {
-            title: `${person}'s Contact`,
-            payload: `${person}'s Contact`
-          },
-          {
             title: `${person}'s Job History`,
             payload: `${person}'s Job History`
+          },
+          {
+            title: `${person}'s Projects`,
+            payload: `${person}'s Projects`
+          },
+          {
+            title: `${person}'s Contact`,
+            payload: `${person}'s Contact`
           },
           {
             title: 'Something Fun',

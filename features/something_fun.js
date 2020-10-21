@@ -8,6 +8,5 @@ module.exports = function(controller) {
         <br><img src="./images/jo2.jpg" alt="young jen and olivia" width="200">`);
       await bot.reply(message, {type: 'typing'});
     }, 1000);
-  }
-
+  });
 }

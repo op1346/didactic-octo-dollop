@@ -27,7 +27,7 @@ module.exports = function(controller) {
         <br>
         ${project.description}
         <br>
-        Check out the live site <a href="${project.url}">here</a>!
+        Check out the live site <a href="${project.url} target="_blank">here</a>!
         </div>`
       ))}`});
       await bot.reply(message, {type: 'typing'});

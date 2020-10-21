@@ -1,7 +1,7 @@
 const data = require("./data/data");
 
 module.exports = function(controller) {
-  controller.hears(["jen's job history", "olivia's job history"], "message", async(bot, message) => {
+  controller.hears(["jen's contact", "olivia's contact"], "message", async(bot, message) => {
     let person;
     if (message.text.toLowerCase().includes("olivia")){
       person = "Olivia";
@@ -9,35 +9,43 @@ module.exports = function(controller) {
       person = "Jen";
     }
 
-    const {jobHistory} = person === "Jen" ? data.jen : data.olivia;
+    const {contactInfo} = person === "Jen" ? data.jen : data.olivia;
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, `Here is a list of ${person}'s job history:`);
+      await bot.reply(message, `Here is ${person}'s contact information:`);
       await bot.reply(message, {type: 'typing'});
-    }, 1000);
+    }, 1000)
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, {text: `${jobHistory.map(job => (
+      await bot.reply(message,{text:
         `<div>
-          <strong>${job.companyName}</strong> (${job.startDate} - ${job.endDate}) 
-          <br>
-          ${job.location}
-          <br>
-          ${job.jobTitle}
-          <br>
-          ${job.jobDescription}
-        </div>`
-      ))}`});
+        <strong>Full Name: </strong> ${contactInfo.name}
+        <br>
+        <strong>Email: </strong> ${contactInfo.email}
+        <br>
+        <br>
+        <strong>Links To:</strong>
+        <br>
+        <a href="${contactInfo.portfolio}" target="_blank">Portfolio</a>
+        <br>
+        <a href="${contactInfo.linkedIn}" target="_blank">LinkedIn</a>
+        <br>
+        <a href="${contactInfo.github}" target="_blank">Github</a>
+        </div>`});
       await bot.reply(message, {type: 'typing'});
-    }, 2000);
+    }, 2000)
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
       await bot.reply(message, {
         text: `What else would you like to know about ${person}?`,
         quick_replies: [
+          {
+            title: `${person}'s Job History`,
+            payload: `${person}'s Contact`
+          },
           {
             title: `${person}'s Education`,
             payload: `${person}'s Education`
@@ -47,16 +55,11 @@ module.exports = function(controller) {
             payload: `${person}'s Projects`
           },
           {
-            title: `${person}'s Contact`,
-            payload: `${person}'s Contact`
-          },
-          {
             title: 'Something Fun',
             payload: 'Something Fun'
           }
         ]
       });
-    }, 3000);
-
-  });
+    }, 3000)
+  })
 }

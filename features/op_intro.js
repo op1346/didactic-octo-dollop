@@ -1,27 +1,24 @@
-const jenData = require('./data/jen');
-const { firstName } = jenData.firstName;
-
 module.exports = function(controller) {
 
-  controller.hears(["jen", "olivia"], ['message', 'direct_message'], async(bot, message) => {
+  controller.hears(["olivia"], ['message', 'direct_message'], async(bot, message) => {
     await bot.reply(message, {type: 'typing'});
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
       await bot.reply(message, {
-        text: `What would you like to know about ${firstName}?`,
+        text: `What would you like to know about Olivia?`,
         quick_replies: [
           {
-            title: 'Education',
-            payload: 'Education'
+            title: "OP's Education",
+            payload: "Olivia's Education"
           },
           {
-            title: 'Contact',
-            payload: 'Contact'
+            title: "OP's Contact",
+            payload: "Olivia's Contact"
           },
           {
-            title: 'Job History',
-            payload: 'Job History'
+            title: "OP's Job History",
+            payload: "Olivia's Job History"
           },
           {
             title: 'Something Fun',

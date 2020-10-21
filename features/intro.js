@@ -1,4 +1,3 @@
-// const { Botkit } = require('botkit');
 
 module.exports = function(controller) {
   // automatically says hi when user enters

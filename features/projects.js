@@ -23,6 +23,8 @@ module.exports = function(controller) {
         `<div>
         <strong>${project.name}</strong>
         <br>
+        <img src=${project.img} width="300" height="200">
+        <br>
         <i>${project.technologies.join(', ')}</i>
         <br>
         ${project.description}
@@ -31,7 +33,7 @@ module.exports = function(controller) {
         </div>`
       ))}`});
       await bot.reply(message, {type: 'typing'});
-    }, 2000)
+    }, 2500)
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);

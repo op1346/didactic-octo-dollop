@@ -137,29 +137,29 @@ module.exports = {
         name: "Sushi Factory Website",
         description: "Lorem ipsum dolor sit amet",
         technologies: ["JavaScript", "React.js", "CSS"],
-        url: "",
-        img: ""
+        url: "https://sushi-factory.herokuapp.com/#/",
+        img: "./images/sushi.png"
       },
       {
         name: "Puppr",
         description: "Lorem ipsum dolor sit amet",
         technologies: ["Ruby", "Ruby on Rails", "Postgresql", "AWS", "JavaScript", "React.js", "Redux.js", "CSS"],
-        url: "",
-        img: ""
+        url: "http://puppr-project.herokuapp.com/#/",
+        img: "./images/fsp.png"
       },
       {
         name: "Zi Match",
         description: "Lorem ipsum dolor sit amet",
         technologies: ["JavaScript", "HTML", "CSS"],
-        url: "",
-        img: ""
+        url: "http://hellojenlu.com/zi-match/",
+        img: "./images/js.png"
       },
       {
         name: "Bored Gamer",
         description: "Lorem ipsum dolor sit amet",
         technologies: ["JavaScript", "MongoDB", "Express.js", "React.js", "Node.js", "CSS"],
-        url: "",
-        img: ""
+        url: "https://bored-gamer.herokuapp.com/",
+        img: "./images/mern.png"
       },
     ],
     contactInfo: {

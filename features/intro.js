@@ -74,7 +74,7 @@ module.exports = function(controller) {
           }
         ]
       });
-    }, 9000)
+    }, 8000)
 
   })
 

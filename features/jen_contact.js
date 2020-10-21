@@ -2,7 +2,7 @@ const jenData = require("./data/jen");
 const {name, email, portfolio, linkedIn, github} = jenData.contactInfo;
 
 module.exports = function(controller) {
-  controller.hears(['contact', 'email', 'portfolio', 'linkedin', 'github'], 'message,direct_message', async(bot, message) => {
+  controller.hears(["jen's contact"], 'message,direct_message', async(bot, message) => {
     await bot.reply(message, {type: "typing"});
     setTimeout(async () => {
       await bot.changeContext(message.reference);

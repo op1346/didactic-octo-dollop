@@ -251,22 +251,22 @@ module.exports = {
         name: "Portfolio Site",
         description: "A portfolio site of all the projects Olivia completed during bootcamp. These projects include a random quote generator, a DOM manipulation project, an interactive form, a game show app, and an API project.",
         technologies: ["JavaScript", "Node.js", "Express"],
-        url: "www.oliviahpark.com",
-        img: ""
+        url: "http://www.oliviahpark.com",
+        img: "./images/portfolio.png"
       },
       {
         name: "React Gallery App",
         description: "A React Gallery app that is similar to Flickr.",
         technologies: ["JavaScript", "React", "React Router", "Fetch API", "JSX"],
         url: "",
-        img: ""
+        img: "./images/gallery.png"
       },
       {
         name: "SQL Library Manager",
         description: "A website that manages a library database. Allowing the user to create, read, update, and delete books.",
         technologies: ["JavaScript", "Node.js", "Express", "Sequelize"],
-        url: "",
-        img: ""
+        url: "https://library-database-op.herokuapp.com/#/",
+        img: "./images/library.png"
       },
       {
         name: "REST API Project",

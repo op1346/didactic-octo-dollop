@@ -49,11 +49,11 @@ module.exports = {
     ],
     education: [
       {
-        institutionName: "Virginia Tech",
-        degree: "B.S. Fashion Merchandising and Design",
+        institutionName: "App Academy",
+        degree: "Full Stack Web Development",
         description: "Lorem ipsum dolor sit amet",
-        startDate: "August 2012",
-        endDate: "May 2016"
+        startDate: "December 2019",
+        endDate: "April 2020"
       },
       {
         institutionName: "CSU East Bay",
@@ -63,11 +63,11 @@ module.exports = {
         endDate: "May 2019"
       },
       {
-        institutionName: "App Academy",
-        degree: "Full Stack Web Development",
+        institutionName: "Virginia Tech",
+        degree: "B.S. Fashion Merchandising and Design",
         description: "Lorem ipsum dolor sit amet",
-        startDate: "December 2019",
-        endDate: "April 2020"
+        startDate: "August 2012",
+        endDate: "May 2016"
       },
     ],
     technologies: [
@@ -126,10 +126,6 @@ module.exports = {
       {
         name: "SQL",
         years: "1"
-      },
-      {
-        name: "",
-        years: ""
       },
     ],
     projects: [

@@ -24,18 +24,6 @@ module.exports = function(controller) {
       await bot.reply(message, {type: "typing"});
     }, 3000)
 
-    setTimeout(async () => {
-      await bot.changeContext(message.reference);
-      await bot.reply(message, `${jen.description}`);
-      await bot.reply(message, {type: "typing"});
-    }, 3500)
-
-    setTimeout(async () => {
-      await bot.changeContext(message.reference);
-      await bot.reply(message, `${olivia.description}`);
-      await bot.reply(message, {type: "typing"});
-    }, 5000)
-
     let jobText;
     if (jen.jobSearch && olivia.jobSearch) {
       jobText = "Jen and Olivia are both open to job opportunies at the moment!";
@@ -58,7 +46,7 @@ module.exports = function(controller) {
       await bot.changeContext(message.reference);
       await bot.reply(message, `${jobText} ${relocationText}`);
       await bot.reply(message, {type: "typing"});
-    }, 6000)
+    }, 5000)
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
@@ -79,7 +67,7 @@ module.exports = function(controller) {
           }
         ]
       });
-    }, 8000)
+    }, 7000)
 
   })
 

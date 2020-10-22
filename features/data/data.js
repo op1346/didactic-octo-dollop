@@ -130,6 +130,7 @@ module.exports = {
     ],
     projects: [
       {
+        id: 0,
         name: "Sushi Factory Website",
         description: "A website created for sushi restaurant looking to increase online presence and provide easy access to menu.",
         technologies: ["JavaScript", "React.js", "CSS"],
@@ -137,6 +138,7 @@ module.exports = {
         img: "./images/sushi.png"
       },
       {
+        id: 1,
         name: "Puppr",
         description: "A puppy themed clone of photo uploading site, Flickr. Upload your cutest puppy photos, create albums, and more.",
         technologies: ["Ruby", "Ruby on Rails", "Postgresql", "AWS", "JavaScript", "React.js", "Redux.js", "CSS"],
@@ -144,6 +146,7 @@ module.exports = {
         img: "./images/fsp.png"
       },
       {
+        id: 2,
         name: "Zi Match",
         description: "A card matching game to learn simple Chinese words and phrases. Includes a study section with flashcards to initially learn these words/phrases.",
         technologies: ["JavaScript", "HTML", "CSS"],
@@ -151,6 +154,7 @@ module.exports = {
         img: "./images/js.png"
       },
       {
+        id: 3,
         name: "Bored Gamer",
         description: "A web app built by a team of 3 that helps indecisive board gamers choose what to play. Games can be rated and saved for future reference.",
         technologies: ["JavaScript", "MongoDB", "Express.js", "React.js", "Node.js", "CSS"],
@@ -248,27 +252,31 @@ module.exports = {
     ],
     projects: [
       {
+        id: 0,
         name: "Portfolio Site",
         description: "A portfolio site of all the projects Olivia completed during bootcamp. These projects include a random quote generator, a DOM manipulation project, an interactive form, a game show app, and an API project.",
         technologies: ["JavaScript", "Node.js", "Express"],
-        url: "www.oliviahpark.com",
-        img: ""
+        url: "http://www.oliviahpark.com",
+        img: "./images/portfolio.png"
       },
       {
+        id: 1,
         name: "React Gallery App",
         description: "A React Gallery app that is similar to Flickr.",
         technologies: ["JavaScript", "React", "React Router", "Fetch API", "JSX"],
         url: "",
-        img: ""
+        img: "./images/gallery.png"
       },
       {
+        id: 2,
         name: "SQL Library Manager",
         description: "A website that manages a library database. Allowing the user to create, read, update, and delete books.",
         technologies: ["JavaScript", "Node.js", "Express", "Sequelize"],
-        url: "",
-        img: ""
+        url: "https://library-database-op.herokuapp.com/#/",
+        img: "./images/library.png"
       },
       {
+        id: 3,
         name: "REST API Project",
         description: "Backend portion of a fullstack project for managing courses at an imaginary school.",
         technologies: ["JavaScript", "Sequelize", "Express.js", "Node.js"],

@@ -15,13 +15,30 @@ module.exports = function(controller) {
       await bot.changeContext(message.reference);
       await bot.reply(message, `<img src="./images/jo2.jpg" alt="young jen and olivia" width="200">`);
       await bot.reply(message, {type: 'typing'});
-    }, 2000);
+    }, 2500);
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
       await bot.reply(message, "Although not always close physically (Jen is in Virginia and Olivia is in Korea!), their friendship has survived through the years and they are always supporting each other to be the best software engineers they can be.");
       await bot.reply(message, {type: 'typing'});
-    }, 3000);
+    }, 3500);
+
+    setTimeout(async () => {
+      await bot.changeContext(message.reference);
+      await bot.reply(message, {
+        text: "Who would you like more information on?",
+        quick_replies: [
+          {
+            title: 'Jen',
+            payload: 'Jen'
+          },
+          {
+            title: 'Olivia',
+            payload: 'Olivia'
+          }
+        ]
+      });
+    }, 5000)
   })
 
 }

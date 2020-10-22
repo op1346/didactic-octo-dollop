@@ -23,7 +23,7 @@ module.exports = function(controller) {
         `<ul>
         <li><strong>${tech.name}:</strong> ${tech.years} year(s)</li>
         </ul>`
-      ))}`});
+      )).join('')}`});
       await bot.reply(message, {type: 'typing'});
     }, 2000);
 

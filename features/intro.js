@@ -10,13 +10,13 @@ module.exports = function(controller) {
       await bot.changeContext(message.reference);
       await bot.reply(message, "Hi there!");
       await bot.reply(message, {type: "typing"});
-    }, 1000)
+    }, 2000)
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
       await bot.reply(message, `My name is JO the OJ Bot and I was created by <strong>Jen Lu</strong> and <strong>Olivia Park</strong>`);
       await bot.reply(message, {type: "typing"});
-    }, 2000)
+    }, 2500)
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);

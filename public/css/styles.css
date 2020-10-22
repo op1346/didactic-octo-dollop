@@ -391,8 +391,8 @@ a.button:hover {
 
 /****** SPLASH ******/
 .splash {
-  background: rgb(255,165,165);
-  background: linear-gradient(45deg, rgba(255,165,165,1) 20%, rgba(61,126,166,1) 80%);
+  background: rgb(218, 165, 215) ;
+  background: linear-gradient(45deg, rgb(218, 165, 215) 20%, rgba(61,126,166,1) 80%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -401,7 +401,10 @@ a.button:hover {
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  opacity: 0;
+
+  animation-name: fadeOut;
+  animation-duration: 3s;
 }
 
 .splash h1 {
@@ -412,11 +415,17 @@ a.button:hover {
   padding: 30px 50px;
 }
 
-.splash h1:hover {
+/* .splash h1:hover {
   cursor: pointer;
   border: 5px dashed black;
   color: black;
   transition-duration: 0.3s;
+} */
+
+@keyframes fadeOut {
+  0% {opacity: 1; top: 0%; z-index: 1;}
+  50% {opacity: 0.8; top: 0%; z-index: 1;}
+  100% {opacity: 0; top: 100%; z-index: 0;}
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -41,10 +41,6 @@ module.exports = function(controller) {
           {
             title: `${person}'s Contact`,
             payload: `${person}'s Contact`
-          },
-          {
-            title: 'Something Fun',
-            payload: 'Something Fun'
           }
         ]
       });

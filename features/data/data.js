@@ -283,5 +283,22 @@ module.exports = {
       linkedIn: "https://www.linkedin.com/in/olivia-park-2b564174/",
       github: "https://github.com/op1346",
     }
-  }
+  },
+  fun: [
+    {
+      description: "Here is Olivia with her dogs, Bailey and Paco!",
+      img: "./images/fun1.jpg",
+      alt: "Olivia and her dogs"
+    },
+    {
+      description: "Here is Jen hanging out with some of her favorite villagers of Cheese Island",
+      img: "./images/fun2.jpg",
+      alt: "Jen's Animal Crossing"
+    },
+    {
+      description: "In the summer of 2018, Jen and Olivia roadtripped across the US from California to Virginia. Here's a photo from the trip!",
+      img: "./images/fun3.jpg",
+      alt: "photo from cross country roadtrip"
+    }
+  ]
 }

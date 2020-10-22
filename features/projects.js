@@ -114,7 +114,7 @@ module.exports = function(controller) {
             payload: `${person}`
           }
         ]
-      });
+      }, 1000);
 
     })
   });

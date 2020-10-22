@@ -8,7 +8,7 @@ module.exports = function(controller) {
     } else if (message.text.toLowerCase().includes("jen")){
       person = "Jen";
     }
-    
+
     const {projects} = person === "Jen" ? data.jen : data.olivia;
 
     setTimeout(async () => {
@@ -29,7 +29,7 @@ module.exports = function(controller) {
         <br>
         ${project.description}
         <br>
-        Check out the live site <a href="${project.url} target="_blank">here</a>!
+        Check out the live site <a href="${project.url}" target="_blank">here</a>!
         </div>`
       ))}`});
       await bot.reply(message, {type: 'typing'});

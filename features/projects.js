@@ -10,6 +10,10 @@ module.exports = function(controller) {
     }
 
     const {projects} = person === "Jen" ? data.jen : data.olivia;
+    const projectList = [...projects.map(project => ({
+      title: project.name,
+      payload: project.name
+    }))]
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
@@ -19,21 +23,41 @@ module.exports = function(controller) {
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, {text: `${projects.map(project=> (
-        `<div>
-        <strong>${project.name}</strong>
-        <br>
-        <img src=${project.img} width="300" height="200">
-        <br>
-        <i>${project.technologies.join(', ')}</i>
-        <br>
-        ${project.description}
-        <br>
-        Check out the live site <a href="${project.url}" target="_blank">here</a>!
-        </div>`
-      ))}`});
-      await bot.reply(message, {type: 'typing'});
-    }, 2500)
+      await bot.reply(message, {
+        text: `<div><Strong>Projects</Strong></div>${projects.map(project => `<div>- ${project.name}</div>`).join('')}`
+      });
+    }, 1500);
+
+    setTimeout(async () => {
+      await bot.changeContext(message.reference);
+      await bot.reply(message, {
+        text: `Which one would you like to see?`,
+        quick_replies: projectList
+      });
+    }, 2000);
+
+    controller.hears(`${project.name}`, "message", async(bot, message) => {
+      await bot.reply(message, {type: "typing"});
+
+      setTimeout(async () => {
+        await bot.changeContext(message.reference);
+        await bot.reply(message, {
+          text:
+            `<div>
+            <Strong>${project.name}</Strong>
+            <br>
+            <img src=${project.img} width "300" height="200">
+            <br>
+            <i>${project.technologies.join(', ')}</i>
+            <br>
+            ${project.description}
+            <br>
+            Check out the live site <a href="${project.url}" target="_blank">here</a>!
+            </div>`
+        });
+        await bot.reply(message, {type: 'typing'});
+        }, 2500);
+    });
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
@@ -51,6 +75,5 @@ module.exports = function(controller) {
         ]
       });
     }, 3000)
-
   });
 }

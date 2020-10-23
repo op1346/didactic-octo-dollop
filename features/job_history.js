@@ -28,7 +28,7 @@ module.exports = function(controller) {
           ${job.jobTitle}
           <br>
           ${job.jobDescription}
-        </div>`
+        </div><br>`
       )).join('')}`});
       await bot.reply(message, {type: 'typing'});
     }, 2000);

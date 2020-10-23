@@ -26,7 +26,7 @@ module.exports = function(controller) {
         `<div>
         <strong>${school.institutionName}</strong> (${school.startDate} - ${school.endDate})
           <p><i>${school.degree}</i></p>
-        </div>`
+        </div><br>`
     )).join('')}`})
     }, 2000);
 

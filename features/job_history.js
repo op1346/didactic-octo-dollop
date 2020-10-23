@@ -21,7 +21,7 @@ module.exports = function(controller) {
       await bot.changeContext(message.reference);
       await bot.reply(message, {text: `${jobHistory.map(job => (
         `<div>
-          <strong>${job.companyName}</strong> (${job.startDate} - ${job.endDate}) 
+          <strong>${job.companyName}</strong> (${job.startDate} - ${job.endDate})
           <br>
           ${job.location}
           <br>
@@ -29,7 +29,7 @@ module.exports = function(controller) {
           <br>
           ${job.jobDescription}
         </div>`
-      ))}`});
+      )).join('')}`});
       await bot.reply(message, {type: 'typing'});
     }, 2000);
 

@@ -12,7 +12,7 @@ module.exports = function(controller) {
     }
 
     const {education} = person === "Jen" ? data.jen : data.olivia;
-    
+
     setTimeout(async () => {
       await bot.changeContext(message.reference);
       await bot.reply(message, `${person} has ${education.length} items listed in education`);
@@ -21,13 +21,14 @@ module.exports = function(controller) {
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
-      await bot.reply(message, `${education.map(school => (
+      await bot.reply(message, {
+        text: `${education.map(school => (
         `<div>
-          <strong>${school.institutionName}</strong> (${school.startDate} - ${school.endDate})
+        <strong>${school.institutionName}</strong> (${school.startDate} - ${school.endDate})
           <p><i>${school.degree}</i></p>
         </div>`
-      ))}`)
-    }, 2000)
+    )).join('')}`})
+    }, 2000);
 
     setTimeout(async () => {
       await bot.changeContext(message.reference);
